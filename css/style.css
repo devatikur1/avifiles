@@ -391,7 +391,7 @@ main section.worksSection {
 }
 
 .works .work .workImg {
-     max-width: 400px;
+     max-width: 350px;
      border: 2px solid rgba(52, 50, 50, 0.2);
      border-radius: 26px;
      transition: transform 0.5s ease;
@@ -460,7 +460,7 @@ main section.worksSection {
     }
 
     .worksSection .workHeading {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .works .work .workImg {
@@ -469,7 +469,7 @@ main section.worksSection {
 
 }
 
-/* ---------------------------worksSection-css-style----------------------------- */
+/* ---------------------------featureSection-css-style----------------------------- */
 
  main section.featureSection {
     display: flex;
@@ -502,14 +502,284 @@ main section.worksSection {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding-top: 10px;
+    font-family: var(--Poppins-font);
  }
 
  .feature_btn_panel .action_link {
-    font-size: 13.8px;
-    font-weight: 500;
-    font-family: var(--Poppins-font);
-    padding: 10px 20px;
-    border: 1px solid #CCCCCC;
-    border-radius: 8px;
-    background: rgb(255, 255, 255);
+     background: white;
+     border: 2px solid #e2e8f0;
+     border-radius: 12px;
+     padding: 18px 24px;
+     font-size: 0.95rem;
+     font-weight: 550;
+     color: #000;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     text-decoration: none;
+     display: block;
  }
+
+   .action_link:hover {
+    background: #010101;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* responsive layout */
+
+@media screen and (max-width: 825px) {
+
+      .featureSection .feature_btn_panel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+}
+
+@media screen and (max-width: 930px) {
+    
+     .featureSection .featurePara {
+        font-size: 14px;
+     }
+
+     .featureSection .featureHeading {
+        font-size: 2.5rem;
+     }
+
+}
+
+@media screen and (max-width: 680px) {
+    
+     .featureSection .featurePara {
+        font-size: 12px;
+        width: 450px;
+     }
+
+     .featureSection .featureHeading {
+        font-size: 2.1rem;
+     }
+
+}
+
+@media screen and (max-width: 569px) {
+
+        .featureSection .featurePara {
+           font-size: 12px;
+           width: 400px;
+       }
+
+      .featureSection .featureHeading {
+         font-size: 2rem;
+      }
+
+      .featureSection .feature_btn_panel {
+        width: 400px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+}
+
+@media screen and (max-width: 470px) {
+
+         main section.featureSection {
+            gap: 15px;
+         }
+
+        .featureSection .featurePara {
+           font-size: 12px;
+           width: 350px;
+           line-height: 15px;
+           font-weight: 400;
+       }
+
+      .featureSection .featureHeading {
+         font-size: 1.3rem;
+      }
+
+      .featureSection .feature_btn_panel {
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+       .feature_btn_panel .action_link { 
+        font-size: 0.8rem;
+       }
+
+}
+@media screen and (max-width: 400px) {
+
+         main section.featureSection {
+            gap: 15px;
+         }
+         
+         .featureSection .featureHeading {
+            font-size: 1.4rem;
+            margin-left: 10px;
+            margin-right: 10px;
+         }
+
+        .featureSection .featurePara {
+           font-size: 10px;
+           width: 250px;
+           line-height: 15px;
+           font-weight: 400;
+       }
+
+      .featureSection .feature_btn_panel {
+        width: 250px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+       .feature_btn_panel .action_link { 
+        font-size: 0.8rem;
+       }
+
+}
+
+/* ---------------------------CTASection-css-style----------------------------- */
+
+ main section.CTASection {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .CTASection .CTABody {
+   width: 80%;
+   background-color: #010101;
+   border-radius: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 40px 100px;
+   max-width: 900px;
+ }
+
+ .CTABody .CTAHeading {
+   font-family: var(--Rethink_Sans-font);
+   font-size: 30px;
+   color: #fff;
+   font-weight: bold;
+   text-align: center;
+ }
+
+ .CTABody .CTAPara {
+   font-family: var(--Poppins-font);
+   font-size: 12.71px;
+   color: #fff;
+   font-weight: 400;
+   text-align: center;
+ }
+
+ .CTABody .CTABtn {
+   font-family: var(--Poppins-font);
+   font-size: 12.71px;
+   color: #000;
+   font-weight: 600;
+   text-align: center;
+   padding: 10px 20px;
+   border-radius: 15px;
+   border: none;
+   margin-top: 5px;
+ }
+
+/* responsive layout */
+
+@media screen and (max-width: 830px) {
+      
+    .CTABody .CTAHeading {
+         font-size: 25px;
+    }
+
+   .CTABody .CTAPara {
+       font-size: 11px;
+    }
+
+     .CTABody .CTABtn {
+        font-size: 11px;
+     }
+
+      .CTABody .CTABtn {
+         padding: 8px 26px;
+      }
+
+}
+
+@media screen and (max-width: 705px) {
+   
+
+      
+    .CTABody .CTAHeading {
+         font-size: 20px;
+    }
+
+   .CTABody .CTAPara {
+       font-size: 9px;
+    }
+
+     .CTABody .CTABtn {
+        font-size: 9px;
+     }
+
+      .CTABody .CTABtn {
+         padding: 6px 22px;
+      }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .CTASection .CTABody {
+         padding: 30px 80px;
+    }
+      
+    .CTABody .CTAHeading {
+         font-size: 15 px;
+    }
+
+   .CTABody .CTAPara {
+       font-size: 9px;
+    }
+
+     .CTABody .CTABtn {
+        font-size: 9px;
+     }
+
+      .CTABody .CTABtn {
+         padding: 6px 22px;
+      }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .CTASection .CTABody {
+         padding: 30px 50px;
+         width: 90%;
+         border-radius: 20px;
+    }
+      
+    .CTABody .CTAHeading {
+         font-size: 18px;
+    }
+
+   .CTABody .CTAPara {
+       font-size: 9px;
+    }
+
+     .CTABody .CTABtn {
+        font-size: 9px;
+     }
+
+      .CTABody .CTABtn {
+         padding: 6px 22px;
+      }
+
+}
